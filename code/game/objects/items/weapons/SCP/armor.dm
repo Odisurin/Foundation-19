@@ -25,6 +25,7 @@
 /obj/item/clothing/suit/armor/vest/scp
 	icon = 'icons/obj/clothing/suits.dmi'
 	w_class = ITEM_SIZE_HUGE
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_M)
 
 /obj/item/clothing/suit/armor/vest/scp/lightarmor
 	name = "armored anti-stab vest"
@@ -97,4 +98,4 @@
 	icon_state = "beta-armor"
 	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	armor = list(melee = 100, bullet = 70, laser = 40, energy = 25, bomb = 30, bio = 60, rad = 80)
+	armor = list(melee = 90, bullet = 70, laser = 40, energy = 25, bomb = 30, bio = 90, rad = 90)
