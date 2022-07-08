@@ -38,7 +38,11 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 
 /mob/living/carbon/human/scp049/Initialize()
 	..()
-
+	add_language(LANGUAGE_ENGLISH, TRUE)
+	add_language(LANGUAGE_HUMAN_FRENCH, TRUE)
+	add_language(LANGUAGE_HUMAN_GERMAN, TRUE)
+	add_language(LANGUAGE_HUMAN_SPANISH, TRUE)
+	update_languages()
 	// fix names
 	fully_replace_character_name("SCP-049")
 
@@ -58,8 +62,11 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	)
 
 /mob/living/carbon/human/scp049/Destroy()
+	pestilence_images = null
+	attempted_surgery_on = null
+	target = null
 	GLOB.scp049s -= src
-	. = ..()
+	return ..()
 
 /mob/living/carbon/human/scp049/Life()
 	..()
@@ -68,9 +75,6 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	if(anger==100)
 		angry = TRUE
 
-
-#warn work on anger system
-
 /mob/living/carbon/human/scp049/Login()
 	. = ..()
 	if(client)
@@ -78,11 +82,6 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 			mutations.Add(MUTATION_XRAY)
 			update_mutations()
 			update_sight()
-		add_language(LANGUAGE_ENGLISH, TRUE)
-		add_language(LANGUAGE_HUMAN_FRENCH, TRUE)
-		add_language(LANGUAGE_HUMAN_GERMAN, TRUE)
-		add_language(LANGUAGE_HUMAN_SPANISH, TRUE)
-		update_languages()
 	if(target)
 		target = null
 
