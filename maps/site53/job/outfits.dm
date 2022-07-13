@@ -651,7 +651,7 @@
 /decl/hierarchy/outfit/job/site90/crew/command/event/chaos_soldier
 	name = OUTFIT_JOB_NAME("Chaos Insurgency Soldier")
 	uniform = /obj/item/clothing/under/scp/utility/chaos
-	suit = /obj/item/clothing/suit/armor/vest/scp/medarmorchaos
+//	suit = /obj/item/clothing/suit/armor/vest/scp/medarmorchaos -- armor doesnt exist
 	head = /obj/item/clothing/head/helmet/scp/chaos
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
@@ -671,7 +671,7 @@
 /decl/hierarchy/outfit/job/site90/crew/command/event/chaos_soldier_alt
 	name = OUTFIT_JOB_NAME("Chaos Insurgency Heavy Soldier")
 	uniform = /obj/item/clothing/under/scp/utility/chaos
-	suit = /obj/item/clothing/suit/armor/vest/scp/medarmorchaos
+//	suit = /obj/item/clothing/suit/armor/vest/scp/medarmorchaos
 	head = /obj/item/clothing/head/helmet/scp/chaos
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
@@ -691,7 +691,7 @@
 /decl/hierarchy/outfit/job/site90/crew/command/event/chaos_leader
 	name = OUTFIT_JOB_NAME("Chaos Insurgency Squad Leader")
 	uniform = /obj/item/clothing/under/scp/utility/chaos
-	suit = /obj/item/clothing/suit/armor/vest/scp/medarmorchaos
+//	suit = /obj/item/clothing/suit/armor/vest/scp/medarmorchaos
 	head = /obj/item/clothing/head/beret/solgov/fleet/security
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
@@ -841,3 +841,16 @@
 	l_pocket = /obj/item/ammo_magazine/scp/mk9
 	l_ear = null
 	back = null
+
+
+/decl/hierarchy/outfit/job/site90/crew/civ/officeworker
+	name = OUTFIT_JOB_NAME("Office Worker")
+	uniform = /obj/item/clothing/under/scp/suittie
+	shoes = /obj/item/clothing/shoes/laceup
+	id_types = list(/obj/item/card/id/officeworker)
+	back = /obj/item/storage/backpack/satchel/leather/black
+	backpack_contents = list(/obj/item/paper_bin = 1,/obj/item/device/radio =1,/obj/item/pen = 1)
+	l_ear = /obj/item/device/radio/headset/headset_service
+	r_ear = /obj/item/pen
+	l_pocket = /obj/item/material/clipboard
+	r_pocket = /obj/item/folder
